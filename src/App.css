@@ -1,0 +1,73 @@
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+
+/*----------Container section----------*/
+
+.main-container {
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+  height: 100vh;
+  background-color: rgba(140, 128, 128, 1);
+}
+
+.mid-section {
+  min-height: 400px;
+  background-color: rgba(173, 151, 130, 1);
+}
+
+.exp-container {
+  min-height: 600px;
+  background-color: rgba(125, 135, 155, 1);
+}
+
+.footer-container {
+  min-height: 200px;
+  background-color: rgba(20, 13, 7, 1);
+  color: white;
+}
+
+/*----------Components style----------*/
+
+/*MAIN*/
+.git-logo {
+  position: absolute;
+  top: 0;
+  right: 0;
+}
+.bi-github {
+  width: 50px;
+  height: 50px;
+  color: rgb(0, 0, 0);
+  transform: rotate(45deg);
+  transition-duration: 800ms;
+}
+.bi-github:hover {
+  position: absolute;
+  top: 0;
+  right: 0;
+  width: 70px;
+  height: 70px;
+  transform: rotate(0deg);
+}
+
+/*ABOUT*/
+.about-text-container {
+  max-width: 500px;
+  border: 1px solid black;
+}
+
+/*PROJECTS*/
+.project-container {
+  background-color: rgba(125, 135, 155, 1);
+}
+
+/*SKILLS*/
+
+/*EXPERIENCE*/
+
+/*FOOTER*/
