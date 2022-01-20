@@ -3,7 +3,12 @@ import React from 'react';
 export const Skills = () => {
   return (
   <div className='mid-section'>
-    skills icons with ul--li
+    <ul>
+      <li>img</li>
+      <li>img</li>
+      <li>img</li>
+      <li>img</li>
+    </ul>
   </div>
   );
 };

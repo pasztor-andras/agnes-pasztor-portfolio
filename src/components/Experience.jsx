@@ -1,9 +1,41 @@
-import React from 'react';
+import React from "react";
 
 export const Experience = () => {
   return (
-  <div className='exp-container'>
-    Experience timeline
-  </div>
+    <div className="exp-container">
+      <span>Experience timeline</span>
+      {/* <div className="exp-cards-container">
+        <div className="exp-card"></div>
+        <div className="exp-card"></div>
+        <div className="exp-card"></div>
+      </div>
+      <span className="horizontal-line"></span> */}
+      <div className="exp-timeline">
+        <div className="exp-card left">
+          <div className="content">
+            <h2>2017</h2>
+            <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Consectetur fugiat unde, odit nesciunt expedita amet reprehenderit facere ipsam impedit ea voluptas, incidunt aspernatur, aliquid voluptatum sunt! Harum nemo deserunt quidem.</p>
+          </div>
+        </div>
+        <div className="exp-card right">
+          <div className="content">
+            <h2>2016</h2>
+            <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Consectetur fugiat unde, odit nesciunt expedita amet reprehenderit facere ipsam impedit ea voluptas, incidunt aspernatur, aliquid voluptatum sunt! Harum nemo deserunt quidem.</p>
+          </div>
+        </div>
+        <div className="exp-card left">
+          <div className="content">
+            <h2>2017</h2>
+            <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Consectetur fugiat unde, odit nesciunt expedita amet reprehenderit facere ipsam impedit ea voluptas, incidunt aspernatur, aliquid voluptatum sunt! Harum nemo deserunt quidem.</p>
+          </div>
+        </div>
+        <div className="exp-card right">
+          <div className="content">
+            <h2>2016</h2>
+            <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Consectetur fugiat unde, odit nesciunt expedita amet reprehenderit facere ipsam impedit ea voluptas, incidunt aspernatur, aliquid voluptatum sunt! Harum nemo deserunt quidem.</p>
+          </div>
+        </div>
+      </div>
+    </div>
   );
 };

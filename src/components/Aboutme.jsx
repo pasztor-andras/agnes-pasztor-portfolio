@@ -1,9 +1,10 @@
 import React from "react";
+import portfolio from "../images/About-img.jpg"
 
 export const Aboutme = () => {
   return (
     <div className="mid-section about-container">
-      <div>Profile picture</div>
+      <div className="about-img"><img className="port-img" src={portfolio} alt="profile" /></div>
       <div className="about-text-container">
         <div className="about-text-header"></div>
         Lorem ipsum dolor sit amet consectetur adipisicing elit. Id nulla odio, alias cupiditate molestias quidem error. Voluptates quibusdam corporis
