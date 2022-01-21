@@ -233,6 +233,7 @@ body {
 
 .right {
   left: 50%;
+  animation: falling-title 2.5s;
 }
 
 .left::before {
