@@ -10,6 +10,7 @@ export const Main = () => {
       </div>
       <div className="main-container">
         <h1>Agnes Pasztor</h1>
+        <p className="occupation-title">Senior Software Engineer in Testing</p>
         <div className="switch-btn-container">
           <button className="switch-btn">Theme switcher</button>
         </div>
