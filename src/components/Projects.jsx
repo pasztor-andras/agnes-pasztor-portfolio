@@ -9,8 +9,8 @@ export const Projects = () => {
             <h1>Project1</h1>
           </div>
           <div className="project-card-back">
-            <h1>Cég</h1>
-            <p>Leírás valami,valami,valami</p>
+            <h1>Amboss</h1>
+            <p>https://www.ambos.com/us</p>
             <button>More information</button>
           </div>
         </div>
@@ -21,20 +21,8 @@ export const Projects = () => {
           <h1>Project2</h1>
           </div>
           <div className="project-card-back">
-          <h1>Cég</h1>
-            <p>Leírás valami,valami,valami</p>
-            <button>More information</button>
-          </div>
-        </div>
-      </div>
-      <div className="project-card">
-        <div className="project-card-inner">
-          <div className="project-card-front">
-          <h1>Project3</h1>
-          </div>
-          <div className="project-card-back">
-          <h1>Cég</h1>
-            <p>Leírás valami,valami,valami</p>
+          <h1>Omixon</h1>
+            <p>https://www.omixon.com/products/hla-twin</p>
             <button>More information</button>
           </div>
         </div>
