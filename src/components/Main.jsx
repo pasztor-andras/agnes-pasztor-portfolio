@@ -1,4 +1,5 @@
 import React from "react";
+import logo from "../images/Logo.png";
 
 export const Main = () => {
   return (
@@ -9,10 +10,12 @@ export const Main = () => {
         </svg>
       </div>
       <div className="main-container">
-        <h1>Agnes Pasztor</h1>
-        <p className="occupation-title">Senior Software Engineer in Testing</p>
+        {/* <h1>Agnes Pasztor</h1> */}
+        <div className="logo-container">
+          <img className="logo-container" src={logo} alt="logo" />
+        </div>
         <div className="switch-btn-container">
-          <button className="switch-btn">Theme switcher</button>
+          {/* <button className="switch-btn">Theme switcher</button> */}
         </div>
       </div>
     </>
