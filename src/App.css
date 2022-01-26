@@ -82,8 +82,7 @@ html {
   }
 }
 
-.main-container h1 {
-  font-size: 5rem;
+.logo-container{
   animation: falling-title 2.5s;
 }
 @keyframes falling-title {
@@ -98,11 +97,12 @@ html {
 }
 
 .logo-container {
-  min-width: 600px;
+  width: 800px;
 }
 @media (max-width: 800px) {
   .logo-container {
-    width: 80%;
+    width: 100%;
+    min-width: 360px;
     transition: 1000ms;
   }
 }
@@ -222,7 +222,7 @@ html {
   font-size: 1.5rem;
 }
 @media (max-width: 800px) {
-  .skills-container{
+  .skills-container {
     flex-direction: column;
   }
 }
@@ -239,6 +239,11 @@ html {
 .exp-container span {
   font-size: 2rem;
   font-weight: bold;
+}
+@media (max-width: 600px) {
+  .exp-container span {
+    font-size: 1rem;
+  }
 }
 
 .exp-timeline {
@@ -328,13 +333,13 @@ html {
     left: 31px;
   }
 
-  .container {
+  .exp-card {
     width: 100%;
     padding-left: 70px;
     padding-right: 25px;
   }
 
-  .container::before {
+  .exp-card::before {
     left: 60px;
     border: medium solid rgb(255, 255, 255);
     border-width: 10px 10px 10px 0;
@@ -382,8 +387,8 @@ html {
 }
 
 .circle {
-  width: 25px;
-  height: 25px;
+  /* max-width: 25px;
+  max-height: 25px; */
   border-radius: 50%;
   border: 1px solid rgb(0, 0, 0, 0.7);
   margin: 0 5px 0;
@@ -397,6 +402,15 @@ html {
 .color-green {
   background-color: rgb(120, 177, 89);
 }
+@media (max-width: 600px) {
+  .public-header p {
+    font-size: 0.7rem;
+  }
+  .circle{
+    width: 12.5px;
+    height: 12.5px;
+  }
+}
 
 /*FOOTER*/
 .footer-container {
@@ -408,4 +422,9 @@ html {
 }
 .footer-container svg {
   cursor: pointer;
+}
+@media (max-width: 600px) {
+  .footer-container {
+    gap: 1rem;
+  }
 }
