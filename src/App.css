@@ -12,6 +12,19 @@ html {
   font-size: 2rem;
 }
 
+a.nostyle:link {
+  text-decoration: inherit;
+  color: inherit;
+  cursor: auto;
+}
+
+a.nostyle:visited {
+  text-decoration: inherit;
+  color: inherit;
+  cursor: auto;
+}
+
+
 /*----------Container section----------*/
 
 .main-container {
@@ -221,26 +234,42 @@ html {
 /*SKILLS*/
 .skills-container {
   display: flex;
+  justify-content: space-evenly;
   padding-top: 40px;
   gap: 10px;
 }
-.skills-container p {
-  max-height: 100px;
-  flex: 1;
+.skills-background{
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  height: 140px;
+  width: 140px;
+  border-radius: 10px;
   background-color: rgb(255, 255, 255, 0.6);
-  text-align: center;
-  text-shadow: 2px 2px rgb(0, 0, 0, 0.4);
-  font-size: 1.5rem;
 }
+.skills-background:hover{
+  transform: scale(1.3);
+  transition: 500ms;
+}
+
 @media (max-width: 800px) {
   .skills-container {
-    flex-direction: column;
+    flex-direction: row;
+    flex-wrap: wrap;
+    justify-content: center;
+    gap: 5px;
   }
-  .skills-container p{
-    height: 100%;
-    width: 50%;
-    margin: auto;
-    font-size: 1rem;
+  .skills-background{
+    height: 110px;
+    width: 110px;
+  }
+  .skills-background:hover{
+    transform: scale(1.1);
+    transition: 500ms;
+  }
+  .icons{
+    max-height: 100px;
+    max-width: 100px;
   }
 }
 
