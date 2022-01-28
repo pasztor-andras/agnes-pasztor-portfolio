@@ -1,9 +1,9 @@
 import React from "react";
+import { useSpring, animated } from "react-spring";
 import logo from "../images/Logo.png";
 
 export const Main = ({ gitUrl }) => {
-
-  
+  const slideIn = useSpring({ from: { opacity: 0, marginTop: -500 }, to: { opacity: 1, marginTop: 0 }, config: { duration: 2000 } });
 
   return (
     <>
@@ -15,10 +15,9 @@ export const Main = ({ gitUrl }) => {
         </a>
       </div>
       <div className="main-container">
-        {/* <h1>Agnes Pasztor</h1> */}
-        <div className="logo-container">
+        <animated.div className="logo-container" style={slideIn}>
           <img className="logo-container" src={logo} alt="logo" />
-        </div>
+        </animated.div>
       </div>
     </>
   );
