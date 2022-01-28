@@ -12,16 +12,18 @@ import { Publications } from './components/Publications';
 
 function App() {
 
+  const gitUrl = "https://github.com/agnesapasztor"
+  const linkedinUrl = "https://www.linkedin.com/in/agnespasztor/"
 
   return (
     <div className="App">
-      <Main />
+      <Main gitUrl={gitUrl}/>
       <Aboutme/>
       <Projects/>
       <Skills/>
       <Experience/>
       <Publications/>
-      <Footer/>
+      <Footer gitUrl={gitUrl} linkedinUrl={linkedinUrl}/>
     </div>
   );
 }
