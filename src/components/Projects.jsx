@@ -1,24 +1,22 @@
 import React, { useState } from "react";
 import { useSpring, a } from "react-spring";
-import styles from "../App.css";
 
 export const Projects = () => {
-  const [showFlippedCard, setShowFlippedCard] = useState(false);
+  const [showFlippedCardOne, setShowFlippedCardOne] = useState(false);
+
   const { transform, opacity } = useSpring({
-    opacity: showFlippedCard ? 0 : 1,
-    tranfsorm: `perspective(600px) rotateY(${showFlippedCard ? 180 : 0}deg)`,
+    opacity: showFlippedCardOne ? 0 : 1,
+    tranfsorm: `perspective(600px) rotateY(${showFlippedCardOne ? 180 : 0}deg)`,
     config: { mass: 5, tension: 1000, friction: 80 },
-  });
+  });  
 
   const FlipperFunction = () => {
-    setShowFlippedCard(state => !state)
+    setShowFlippedCardOne(state => !state)
   }
-  const FlipperFunction2 = () => {
-    setShowFlippedCard(state => !state)
-  }
+  
  
- const projectOneUrl ="https://www.ambos.com/us"
- const projectTwoUrl ="https://www.omixon.com/products/hla-twin"
+ const projectOneUrl = "https://www.ambos.com/us"
+ const projectTwoUrl = "https://www.omixon.com/products/hla-twin"
 
   return (
     <div className="mid-section project-container">
@@ -41,7 +39,7 @@ export const Projects = () => {
         </div>
       </div>
       <div className="project-card">
-        <div className="project-card-inner" onClick={FlipperFunction2}>
+        <div className="project-card-inner">
           <a.div className="project-card-front" style={{
               opacity,
               transform,

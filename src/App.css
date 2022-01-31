@@ -118,6 +118,7 @@ a.nostyle:visited {
   transform: translate(50%, 50%);
 }
 
+
 /*ABOUT*/
 
 .about-text-header {
@@ -223,10 +224,6 @@ a.nostyle:visited {
   border-radius: 10px;
   background-color: rgb(255, 255, 255, 0.6);
 }
-.skills-background:hover {
-  transform: scale(1.3);
-  transition: 500ms;
-}
 
 @media (max-width: 800px) {
   .skills-container {
@@ -239,10 +236,7 @@ a.nostyle:visited {
     height: 110px;
     width: 110px;
   }
-  .skills-background:hover {
-    transform: scale(1.1);
-    transition: 500ms;
-  }
+  
   .icons {
     max-height: 100px;
     max-width: 100px;
