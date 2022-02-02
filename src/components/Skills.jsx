@@ -1,29 +1,55 @@
 import React from "react";
-import { animated } from "react-spring";
+import { motion } from "framer-motion";
+
 
 export const Skills = () => {
-  
+
   const iconNames = ["dataeng", "python", "sql", "js", "cypress", "selenium", "java", "bash", "linux"];
-  const rowOne = iconNames.slice(0, 4).map(icon => {
+
+
+  const rowTwo = iconNames.slice(4, 9).map((icon, index) => {
     return (
-      <div className="skills-background" key={icon} >
-        <img className="icons" key={icon} alt={icon} src={require(`../icons/${icon}.png`)}></img>
+      <div
+        className="skills-background"
+        key={index}
+        initial={{ scale: 1 }}
+        whileHover={{ scale: 1.2} }   
+      >
+        <img className="icons" key={index} alt={icon} src={require(`../icons/${icon}.png`)}></img>
       </div>
     );
   });
-  const rowTwo = iconNames.slice(4, 9).map(icon => {
-    return (
-      <animated.div className="skills-background" key={icon}>
-        <img className="icons" key={icon} alt={icon} src={require(`../icons/${icon}.png`)}></img>
-      </animated.div>
-    );
-  });
-
 
   return (
     <div className="mid-section">
-      <div className="skills-container">{rowOne}</div>
-      <div className="skills-container">{rowTwo}</div>
+      <div className="skills-container">{
+      iconNames.slice(0, 4).map((icon, index) => {
+        return (
+          <motion.div
+            className="skills-background"
+            key={index}
+            initial={{ scale: 1 }}
+            whileHover={{ scale: 1.2} }            
+          >
+            <img className="icons" key={index} alt={icon} src={require(`../icons/${icon}.png`)} animate={{}}></img>
+          </motion.div>
+        ); 
+      })
+      }</div>
+      <div className="skills-container">{
+        iconNames.slice(4, 9).map((icon, index) => {
+          return (
+            <motion.div
+              className="skills-background"
+              key={index}
+              initial={{ scale: 1 }}
+              whileHover={{ scale: 1.2} }            
+            >
+              <img className="icons" key={index} alt={icon} src={require(`../icons/${icon}.png`)} animate={{}}></img>
+            </motion.div>
+          ); 
+        })
+      }</div>
     </div>
   );
 };

@@ -1,8 +1,6 @@
 import React from "react";
-import { useSpring, animated } from "react-spring";
 
 export const Experience = () => {
-  const slidingTimes = useSpring({ from: { opacity: 0, marginTop: -500 }, to: { opacity: 1, marginTop: 0 }, config: { duration: 2000 } });
 
   return (
     <div className="exp-container">

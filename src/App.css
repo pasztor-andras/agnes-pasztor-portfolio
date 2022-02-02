@@ -191,9 +191,6 @@ a.nostyle:visited {
   background-color: rgb(170, 170, 170);
   color: rgb(0, 0, 0);
 }
-.project-card-front > h1 {
-  transform: rotateY(180deg)
-}
 
 .project-card-back {
   background-color: rgb(230, 213, 172);

@@ -1,10 +1,8 @@
 import React from "react";
-import { useSpring, animated } from "react-spring";
+import { motion } from "framer-motion";
 import logo from "../images/Logo.png";
 
 export const Main = ({ gitUrl }) => {
-  const slideIn = useSpring({ from: { opacity: 0, marginTop: -500 }, to: { opacity: 1, marginTop: 0 }, config: { duration: 2000 } });
-
   return (
     <>
       <div className="git-logo">
@@ -15,9 +13,13 @@ export const Main = ({ gitUrl }) => {
         </a>
       </div>
       <div className="main-container">
-        <animated.div className="logo-container" style={slideIn}>
+        <motion.div className="logo-container"
+          initial={{ y: -500, opacity: 0 }} 
+          animate={{ y: 0, opacity: 1 }} 
+          transition={{ ease: "easeOut", duration: 2.5 }}
+        >
           <img className="logo-container" src={logo} alt="logo" />
-        </animated.div>
+        </motion.div>
       </div>
     </>
   );
