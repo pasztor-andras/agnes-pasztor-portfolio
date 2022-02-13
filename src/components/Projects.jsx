@@ -2,7 +2,7 @@ import React, { useState } from "react";
 import { motion } from "framer-motion";
 
 export const Projects = () => {
-  const projectOneUrl = "https://www.ambos.com/us";
+  const projectOneUrl = "https://www.amboss.com/us";
   const projectTwoUrl = "https://www.omixon.com/products/hla-twin";
 
   return (
@@ -14,7 +14,7 @@ export const Projects = () => {
           </div>
           <div className="project-card-back">
             <h1>Amboss</h1>
-            <p>{projectOneUrl}</p>
+            <a href={projectOneUrl} target="_blank" rel="noopener noreferrer">{projectOneUrl}</a>
           </div>
         </div>
       </div>
@@ -25,7 +25,7 @@ export const Projects = () => {
           </div>
           <div className="project-card-back">
             <h1>Omixon</h1>
-            <p>{projectTwoUrl}</p>
+            <a href={projectTwoUrl} target="_blank" rel="noopener noreferrer">{projectTwoUrl}</a>
           </div>
         </div>
       </div>

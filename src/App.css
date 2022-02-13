@@ -32,7 +32,7 @@ a.nostyle:visited {
   justify-content: center;
   align-items: center;
   height: 100vh;
-  background-color: rgba(140, 128, 128, 1);
+  /* background-color: rgba(140, 128, 128, 1); */
 }
 @media (max-width: 600px) {
   .main-container {
@@ -53,7 +53,7 @@ a.nostyle:visited {
 
 .mid-section {
   min-height: 400px;
-  background-color: rgb(230, 213, 172);
+  /* background-color: rgb(230, 213, 172); */
 }
 
 .exp-container {
@@ -440,4 +440,25 @@ a.nostyle:visited {
   .footer-container {
     gap: 1rem;
   }
+}
+
+/*LOREM*/
+
+.lorem-section{
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+}
+
+.version1{
+  font-family: 'Merriweather', serif;
+}
+.version2{
+  font-family: 'Rowdies', cursive;
+}
+.version3{
+  font-family: 'Source Serif 4', sans-serif;
+}
+.version4{
+  font-family: 'Playfair Display', serif;
 }
