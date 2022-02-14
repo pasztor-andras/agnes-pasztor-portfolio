@@ -126,8 +126,9 @@ a.nostyle:visited {
   background: rgb(223, 223, 223);
   border-radius: 16px;
   box-shadow: inset 3px 3px 3px rgba(0, 0, 0, 0.9);
+  font-family: 'Source Serif 4', sans-serif;
   font-size: 1.3rem;
-  font-weight: bold;
+  font-weight: 700;
 }
 .about-text-container {
   max-width: 700px;
@@ -136,6 +137,8 @@ a.nostyle:visited {
   background: rgba(140, 128, 128, 1);
   border-radius: 16px;
   box-shadow: 20px 20px 20px rgba(0, 0, 0, 0.3);
+  font-family: 'Source Serif 4', sans-serif;
+  font-weight: 400;
 }
 @media (max-width: 800px) {
   .about-text-container {
@@ -174,35 +177,21 @@ a.nostyle:visited {
   perspective: 1000px;
 }
 
-.project-card-front,
-.project-card-back {
-  position: absolute;
-  width: 100%;
-  height: 100%;
-}
-@media screen and (max-width: 800px) {
-  .project-card-front,
-  .project-card-back {
-    font-size: 0.5rem;
-  }
-}
-
-.project-card-front {
-  background-color: rgb(170, 170, 170);
-  color: rgb(0, 0, 0);
-}
-
-.project-card-back {
-  background-color: rgb(230, 213, 172);
-  color: rgb(0, 0, 0);
-}
-
 .project-card-inner {
   position: relative;
   width: 100%;
   height: 100%;
   text-align: center;
+  color: rgb(0, 0, 0);
+  background-color: rgb(230, 213, 172);
   box-shadow: 8px 8px 8px rgba(0, 0, 0, 0.3);
+  font-family: 'Source Serif 4', sans-serif;
+  font-weight: 700;
+}
+@media screen and (max-width: 800px) {
+  .project-card-inner {
+    font-size: 0.5rem;
+  }
 }
 
 /*SKILLS*/
@@ -248,10 +237,11 @@ a.nostyle:visited {
   justify-content: flex-start;
   width: 100%;
   text-align: center;
+  font-family: 'Source Serif 4', sans-serif;
 }
 .exp-container span {
   font-size: 2rem;
-  font-weight: bold;
+  font-weight: 700;
 }
 @media (max-width: 600px) {
   .exp-container span {
@@ -376,6 +366,7 @@ a.nostyle:visited {
   flex-direction: column;
   justify-content: space-around;
   align-items: center;
+  font-family: 'Source Serif 4', sans-serif;
 }
 
 .public-container {
@@ -432,6 +423,7 @@ a.nostyle:visited {
   justify-content: center;
   align-items: center;
   gap: 3rem;
+  font-family: 'Source Serif 4', sans-serif;
 }
 .footer-container svg {
   cursor: pointer;
@@ -440,25 +432,4 @@ a.nostyle:visited {
   .footer-container {
     gap: 1rem;
   }
-}
-
-/*LOREM*/
-
-.lorem-section{
-  display: flex;
-  flex-direction: column;
-  justify-content: center;
-}
-
-.version1{
-  font-family: 'Merriweather', serif;
-}
-.version2{
-  font-family: 'Rowdies', cursive;
-}
-.version3{
-  font-family: 'Source Serif 4', sans-serif;
-}
-.version4{
-  font-family: 'Playfair Display', serif;
 }

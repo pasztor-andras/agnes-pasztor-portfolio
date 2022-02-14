@@ -27,15 +27,12 @@ export const Skills = () => {
         {iconNames.slice(4, 9).map((icon, index) => {
           return (
             <motion.div className="skills-background" key={index} initial={{ scale: 1 }} whileHover={{ scale: 1.2 }}>
-              <motion.img
+              <img
                 className="icons"
                 key={index}
                 alt={icon}
                 src={require(`../icons/${icon}.png`)}
-                initial={{ scale: 1 }}
-                whileHover={{ rotateX: 45, rotateY: 360 }}
-                transition={{ duration: 1 }}
-              ></motion.img>
+              ></img>
             </motion.div>
           );
         })}

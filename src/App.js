@@ -6,8 +6,6 @@ import { Skills } from './components/Skills';
 import { Experience } from './components/Experience';
 import { Footer } from './components/Footer';
 import { Publications } from './components/Publications';
-import { Lorem } from './components/Lorem'
-
 
 
 
@@ -25,7 +23,6 @@ function App() {
       <Experience/>
       <Publications/>
       <Footer gitUrl={gitUrl} linkedinUrl={linkedinUrl}/>
-      <Lorem/>
     </div>
   );
 }
