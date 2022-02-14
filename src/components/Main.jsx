@@ -1,6 +1,7 @@
 import React from "react";
 import { motion } from "framer-motion";
 import logo from "../images/Logo.png";
+import logo1 from "../images/Agnes-Pasztor-Logo.png";
 
 export const Main = ({ gitUrl }) => {
   return (
@@ -19,8 +20,9 @@ export const Main = ({ gitUrl }) => {
           animate={{ y: 0, opacity: 1 }}
           transition={{ ease: "easeOut", duration: 2.5 }}
         >
-          <img className="logo-container" src={logo} alt="logo" />
+          <img className="logo-container" src={logo} alt="logo"/>
         </motion.div>
+          <img className="logo-container" src={logo1} alt="logo"/>
       </div>
     </>
   );

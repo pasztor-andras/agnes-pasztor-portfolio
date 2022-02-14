@@ -1,9 +1,8 @@
 import React from "react";
 
 export const Publications = () => {
-
-  const publicUrl = "https://scholar.google.com/citations?user=4vZlm9kAAAAJ&hl=en"
-  const articleUrl = "https://medium.com/amboss/quality-engineering-70213186d4f4"
+  const publicUrl = "https://scholar.google.com/citations?user=4vZlm9kAAAAJ&hl=en";
+  const articleUrl = "https://medium.com/amboss/quality-engineering-70213186d4f4";
 
   return (
     <div className="mid-section public-section">
@@ -14,12 +13,18 @@ export const Publications = () => {
           <span className="circle color-green"></span>
           <p>Publications & Articles</p>
         </div>
-        <a href={publicUrl} target="_blank" rel="noopener noreferrer">
-          Publications
-        </a>
-        <a href={articleUrl} target="_blank" rel="noopener noreferrer">
-          Recoding Engineering Culture
-        </a>
+        <ul>
+          <li>
+            <a href={publicUrl} target="_blank" rel="noopener noreferrer">
+              Publications
+            </a>
+          </li>
+          <li>
+            <a href={articleUrl} target="_blank" rel="noopener noreferrer">
+              Recoding Engineering Culture
+            </a>
+          </li>
+        </ul>
       </div>
     </div>
   );

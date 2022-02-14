@@ -131,7 +131,7 @@ a.nostyle:visited {
   font-size: 1.3rem;
 }
 .about-text-container {
-  max-width: 900px;
+  max-width: 850px;
   text-align: center;
   padding: 20px 30px;
   background: rgba(151, 177, 198, 1);
@@ -139,17 +139,18 @@ a.nostyle:visited {
   box-shadow: 20px 20px 20px rgba(0, 0, 0, 0.3);
   font-family: 'Source Serif 4', sans-serif;
   font-weight: 400;
-  font-size: 0.8rem;
+  font-size: 0.7rem;
 }
 @media (max-width: 800px) {
   .about-text-container {
     width: 80%;
     transition: 1000ms;
+    font-size: 0.6rem;
   }
   .about-text-header {
     height: 100%;
     font-size: 1rem;
-    font-weight: 400;
+    font-weight: 700;
     transition: 1000ms;
   }
 }
@@ -416,6 +417,12 @@ a.nostyle:visited {
     width: 12.5px;
     height: 12.5px;
   }
+}
+
+.public-container li {
+  margin-top: 15px;
+  margin-left: 10px;
+  list-style: none;
 }
 
 /*FOOTER*/
