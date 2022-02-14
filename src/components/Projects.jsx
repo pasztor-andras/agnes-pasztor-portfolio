@@ -1,5 +1,4 @@
-import React, { useState } from "react";
-import { motion } from "framer-motion";
+import React from "react";
 
 export const Projects = () => {
   const projectOneUrl = "https://www.amboss.com/us";
