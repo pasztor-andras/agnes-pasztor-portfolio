@@ -2,16 +2,8 @@ import React from "react";
 import { motion } from "framer-motion";
 
 export const Aboutme = () => {
-  function changeColorMid() {
-    let color = document.getElementById("colorWellMid").value;
-    document.getElementById("mid-color").style.backgroundColor = color;
-    document.getElementById("colorWellMid").value = color;
-  }
-
   return (
     <div id="mid-color" className="mid-section about-container">
-      <input type="color" name="main" id="colorWellMid" />
-      <input type="button" value="Szín váltó" onClick={changeColorMid} />
       <motion.div
         className="about-text-container"
         style={{ cursor: "grab" }}

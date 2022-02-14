@@ -32,7 +32,7 @@ a.nostyle:visited {
   justify-content: center;
   align-items: center;
   height: 100vh;
-  /* background-color: rgba(140, 128, 128, 1); */
+  background-color: rgb(255, 240, 218);
 }
 @media (max-width: 600px) {
   .main-container {
@@ -53,12 +53,12 @@ a.nostyle:visited {
 
 .mid-section {
   min-height: 400px;
-  /* background-color: rgb(230, 213, 172); */
+  background-color: rgb(232, 218, 204);
 }
 
 .exp-container {
   min-height: 600px;
-  background-color: rgba(125, 135, 155, 1);
+  background-color: rgba(151, 177, 198, 1);
 }
 
 .footer-container {
@@ -99,7 +99,7 @@ a.nostyle:visited {
 }
 
 .logo-container {
-  width: 800px;
+  width: 640px;
 }
 @media (max-width: 800px) {
   .logo-container {
@@ -127,18 +127,19 @@ a.nostyle:visited {
   border-radius: 16px;
   box-shadow: inset 3px 3px 3px rgba(0, 0, 0, 0.9);
   font-family: 'Source Serif 4', sans-serif;
-  font-size: 1.3rem;
   font-weight: 700;
+  font-size: 1.3rem;
 }
 .about-text-container {
-  max-width: 700px;
+  max-width: 900px;
   text-align: center;
   padding: 20px 30px;
-  background: rgba(140, 128, 128, 1);
+  background: rgba(151, 177, 198, 1);
   border-radius: 16px;
   box-shadow: 20px 20px 20px rgba(0, 0, 0, 0.3);
   font-family: 'Source Serif 4', sans-serif;
   font-weight: 400;
+  font-size: 0.8rem;
 }
 @media (max-width: 800px) {
   .about-text-container {
@@ -157,7 +158,7 @@ a.nostyle:visited {
 .project-container {
   display: flex;
   justify-content: space-evenly;
-  background-color: rgba(125, 135, 155, 1);
+  background-color: rgba(151, 177, 198, 1);
 }
 @media (max-width: 800px) {
   .project-container {
@@ -183,7 +184,7 @@ a.nostyle:visited {
   height: 100%;
   text-align: center;
   color: rgb(0, 0, 0);
-  background-color: rgb(230, 213, 172);
+  background-color: rgb(232, 218, 204);
   box-shadow: 8px 8px 8px rgba(0, 0, 0, 0.3);
   font-family: 'Source Serif 4', sans-serif;
   font-weight: 700;
@@ -208,7 +209,7 @@ a.nostyle:visited {
   height: 140px;
   width: 140px;
   border-radius: 10px;
-  background-color: rgb(255, 255, 255, 0.6);
+  background-color: rgb(255, 255, 255, 0.8);
 }
 
 @media (max-width: 800px) {
