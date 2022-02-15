@@ -40,8 +40,8 @@ a.nostyle:visited {
   }
 }
 .logo-container {
-  width: 800px;
   height: 800px;
+  width: 800px;
   object-fit: contain;
 }
 
@@ -84,8 +84,8 @@ a.nostyle:visited {
   position: absolute;
   top: 0;
   right: 0;
-  width: 70px;
   height: 70px;
+  width: 70px;
   transform: rotate(0deg);
 }
 @media (max-width: 600px) {
@@ -93,8 +93,8 @@ a.nostyle:visited {
     position: absolute;
     top: 0;
     right: 0;
-    width: 50px;
     height: 50px;
+    width: 50px;
   }
 }
 
@@ -104,18 +104,8 @@ a.nostyle:visited {
 @media (max-width: 800px) {
   .logo-container {
     width: 100%;
-    min-width: 360px;
+    min-width: 260px;
   }
-}
-
-.switch-btn-container {
-  width: 200px;
-  height: 50px;
-  border: 1px solid rgb(255, 0, 0);
-  border-radius: 50px;
-}
-.switch-btn {
-  transform: translate(50%, 50%);
 }
 
 
@@ -146,6 +136,7 @@ a.nostyle:visited {
     width: 80%;
     transition: 1000ms;
     font-size: 0.6rem;
+    margin: 20px 0 20px 0;
   }
   .about-text-header {
     height: 100%;
@@ -159,6 +150,7 @@ a.nostyle:visited {
 .project-container {
   display: flex;
   justify-content: space-evenly;
+  align-items: center;
   background-color: rgba(151, 177, 198, 1);
 }
 @media (max-width: 800px) {
@@ -166,41 +158,47 @@ a.nostyle:visited {
     align-items: center;
     flex-direction: column;
   }
-  .project-card {
-    height: 100px;
-    width: 100px;
-  }
 }
 
 .project-card {
-  max-height: 350px;
-  min-width: 300px;
-  margin-top: 20px;
-  perspective: 1000px;
-}
-
-.project-card-inner {
-  position: relative;
-  /* width: 400px;
-  height: 50%; */
-  text-align: center;
-  color: rgb(0, 0, 0);
+  display: flex;
+  flex-direction: column;
+  justify-content: space-evenly;
+  align-items: center;
+  height: 300px;
   background-color: rgb(232, 218, 204);
   box-shadow: 8px 8px 8px rgba(0, 0, 0, 0.3);
-  font-family: 'Source Serif 4', sans-serif;
-  font-weight: 700;
+  border-radius: 20px;
+  transition: 1000ms;
 }
-@media screen and (max-width: 800px) {
-  .project-card-inner {
-    font-size: 0.5rem;
+@media (max-width: 800px) {
+  .project-card {
+    flex-direction: column;
+    height: 150px;
+    padding: 0 5px 10px;
   }
 }
 
 .projects-logo {
-  max-height: 350px;
-  min-width: 300px;
-  object-fit: cover;
+  padding: 0 10px 0;
 }
+@media (max-width: 800px) {
+  .projects-logo {
+    max-height: 100px;
+  }
+}
+
+.project-card input {
+  height: 50px;
+  width: 115px;
+  background-color: rgb(255, 255, 255);
+  border-radius: 20px;
+  font-family: 'Source Serif 4', sans-serif;
+  font-weight: 700;
+  font-size: 0.6rem;
+  cursor: pointer;
+}
+
 
 /*SKILLS*/
 .skills-container {
@@ -224,7 +222,8 @@ a.nostyle:visited {
     flex-direction: row;
     flex-wrap: wrap;
     justify-content: center;
-    gap: 5px;
+    padding: 10px 0 10px 0;
+    gap: 10px;
   }
   .skills-background {
     height: 110px;
@@ -283,8 +282,8 @@ a.nostyle:visited {
 .exp-card::after {
   content: "";
   position: absolute;
-  width: 25px;
   height: 25px;
+  width: 25px;
   right: -17px;
   background-color: rgba(125, 135, 155, 1);
   border: 4px solid rgb(255, 255, 255);
@@ -306,8 +305,8 @@ a.nostyle:visited {
   position: absolute;
   z-index: 1;
   content: " ";
-  width: 0;
   height: 0;
+  width: 0;
   top: 22px;
   right: 30px;
   border: medium solid rgb(255, 255, 255);
@@ -319,8 +318,8 @@ a.nostyle:visited {
   position: absolute;
   z-index: 1;
   content: " ";
-  width: 0;
   height: 0;
+  width: 0;
   top: 22px;
   left: 30px;
   border: medium solid rgb(255, 255, 255);
@@ -378,8 +377,8 @@ a.nostyle:visited {
 }
 
 .public-container {
-  min-width: 40%;
   height: 200px;
+  min-width: 40%;
   border: 1px solid rgb(0, 0, 0);
   background-color: rgb(140, 128, 128, 1);
 }
@@ -400,8 +399,8 @@ a.nostyle:visited {
 }
 
 .circle {
-  width: 20px;
   height: 20px;
+  width: 20px;
   border-radius: 50%;
   border: 1px solid rgb(0, 0, 0, 0.7);
   margin: 0 5px 0;
@@ -417,12 +416,20 @@ a.nostyle:visited {
 }
 @media (max-width: 600px) {
   .public-header p {
-    font-size: 0.7rem;
+    font-size: 0.6rem;
   }
   .circle {
-    width: 12.5px;
     height: 12.5px;
+    width: 12.5px;
   }
+}
+
+.public-container ul {
+  height: 70%;
+  margin-top: 5px;
+  border: 1px solid black;
+  border-radius: 10px;
+  background-color: white;
 }
 
 .public-container li {

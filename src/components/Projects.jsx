@@ -1,30 +1,31 @@
 import React from "react";
-import amboss from "../images/Amboss.png";
-import omixon from "../images/omixon-logo.png"
+import amboss from "../images/amboss-logo.png";
+import omixon from "../images/omixon-logo.png";
 
 export const Projects = () => {
   const projectOneUrl = "https://www.amboss.com/us";
   const projectTwoUrl = "https://www.omixon.com/products/hla-twin";
 
+  function GoToProjectOne() {
+    window.open(projectOneUrl);
+  }
+  function GoToProjectTwo() {
+    window.open(projectTwoUrl);
+  }
+
   return (
     <div className="mid-section project-container">
       <div className="project-card">
-        <div className="project-card-inner">
-          <img className="projects-logo" src={amboss} alt="amboss" />
-          {/* <h1>Amboss</h1>
-          <a href={projectOneUrl} target="_blank" rel="noopener noreferrer">
-            {projectOneUrl}
-          </a> */}
-        </div>
+        <img className="projects-logo" src={amboss} alt="amboss" />
+        <form action={projectOneUrl}>
+          <input type="button" onClick={GoToProjectOne} value="Read more" />
+        </form>
       </div>
       <div className="project-card">
-        <div className="project-card-inner">
-          <img src={omixon} alt="omixon" />
-          {/* <h1>Omixon</h1>
-          <a href={projectTwoUrl} target="_blank" rel="noopener noreferrer">
-            {projectTwoUrl}
-          </a> */}
-        </div>
+        <img className="projects-logo" src={omixon} alt="omixon" />
+        <form action={projectTwoUrl}>
+          <input type="button" onClick={GoToProjectTwo} value="Read more" />
+        </form>
       </div>
     </div>
   );
