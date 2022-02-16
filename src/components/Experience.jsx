@@ -6,7 +6,7 @@ export const Experience = () => {
 
   return (
     <div className="exp-container">
-      <span>Experience timeline</span>
+      <span className="section-title">Experience timeline</span>
       <div className="exp-timeline">
         <motion.div className="exp-card left" initial={{ y: -200, opacity: 0 }}  whileInView= {{ y: 0, opacity: 1 }} transition= {{ duration: 1}} viewport={{once: true}}>
           <motion.div className="content">

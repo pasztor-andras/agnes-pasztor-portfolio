@@ -18,11 +18,13 @@ export const Publications = () => {
             <a href={publicUrl} target="_blank" rel="noopener noreferrer">
               Publications
             </a>
+            <p className="public-p">Application of high-throughput next-generation sequencing for HLA typing on buccal extracted DNA.</p>
           </li>
           <li>
             <a href={articleUrl} target="_blank" rel="noopener noreferrer">
               Recoding Engineering Culture
             </a>
+            <p className="public-p">Making quality part of every product</p>
           </li>
         </ul>
       </div>

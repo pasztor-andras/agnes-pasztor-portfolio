@@ -3,6 +3,7 @@ import { motion } from "framer-motion";
 import logo from "../images/Logo.png";
 
 export const Main = ({ gitUrl }) => {
+
   return (
     <>
       <div className="git-logo">
