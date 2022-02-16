@@ -10,37 +10,33 @@ export const Experience = () => {
       <div className="exp-timeline">
         <motion.div className="exp-card left" initial={{ y: -200, opacity: 0 }}  whileInView= {{ y: 0, opacity: 1 }} transition= {{ duration: 1}} viewport={{once: true}}>
           <motion.div className="content">
-            <h2>2017</h2>
+            <h2>Jun 2017 - Present</h2>
             <p>
-              Lorem ipsum dolor sit amet consectetur adipisicing elit. Consectetur fugiat unde, odit nesciunt expedita amet reprehenderit facere ipsam
-              impedit ea voluptas, incidunt aspernatur, aliquid voluptatum sunt! Harum nemo deserunt quidem.
+            Senior Software Engineer in Test
             </p>
           </motion.div>
         </motion.div>
         <motion.div className="exp-card right" initial={{ y: -200, opacity: 0 }}  whileInView= {{ y: 0, opacity: 1 }} transition= {{ duration: 1}} viewport={{once: true}}>
           <div className="content">
-            <h2>2016</h2>
+            <h2>Nov 2013 - Aug 2016</h2>
             <p>
-              Lorem ipsum dolor sit amet consectetur adipisicing elit. Consectetur fugiat unde, odit nesciunt expedita amet reprehenderit facere ipsam
-              impedit ea voluptas, incidunt aspernatur, aliquid voluptatum sunt! Harum nemo deserunt quidem.
+            Software Test Engineer/Customer Support Manager
             </p>
           </div>
         </motion.div>
         <motion.div className="exp-card left" initial={{ y: -200, opacity: 0 }}  whileInView= {{ y: 0, opacity: 1 }} transition= {{ duration: 1}} viewport={{once: true}}>
           <div className="content">
-            <h2>2017</h2>
+            <h2>Mar 2012 - Dec 2012</h2>
             <p>
-              Lorem ipsum dolor sit amet consectetur adipisicing elit. Consectetur fugiat unde, odit nesciunt expedita amet reprehenderit facere ipsam
-              impedit ea voluptas, incidunt aspernatur, aliquid voluptatum sunt! Harum nemo deserunt quidem.
+            Software Test Engineer/Scrummaster
             </p>
           </div>
         </motion.div>
         <motion.div className="exp-card right" initial={{ y: -200, opacity: 0 }}  whileInView= {{ y: 0, opacity: 1 }} transition= {{ duration: 1}} viewport={{once: true}}>
           <div className="content">
-            <h2>2016</h2>
+            <h2>Sep 2008 - Aug 2010</h2>
             <p>
-              Lorem ipsum dolor sit amet consectetur adipisicing elit. Consectetur fugiat unde, odit nesciunt expedita amet reprehenderit facere ipsam
-              impedit ea voluptas, incidunt aspernatur, aliquid voluptatum sunt! Harum nemo deserunt quidem.
+            Software tester/Technical writer
             </p>
           </div>
         </motion.div>

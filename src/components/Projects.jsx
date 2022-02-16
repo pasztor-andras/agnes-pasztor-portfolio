@@ -21,6 +21,7 @@ export const Projects = () => {
           <input type="button" onClick={GoToProjectOne} value="Read more" />
         </form>
       </div>
+      <p className="section-title">Projects</p>
       <div className="project-card">
         <img className="projects-logo" src={omixon} alt="omixon" />
         <form action={projectTwoUrl}>

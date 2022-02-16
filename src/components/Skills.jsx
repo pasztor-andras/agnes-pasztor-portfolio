@@ -6,7 +6,7 @@ export const Skills = () => {
 
   return (
     <div id="skills-color" className="mid-section">
-      <p className="section-title">Skills</p>
+      <p className="section-title">Skills & experiences</p>
       <div className="skills-container">
         {iconNames.slice(0, 4).map((icon, index) => {
           return (
