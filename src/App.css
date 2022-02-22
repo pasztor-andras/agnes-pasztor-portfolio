@@ -114,7 +114,6 @@ a.nostyle:visited {
 .logo-container {
   max-width: 640px;
   max-height: 800px;
-  background-color: rgb(232, 218, 204);
 }
 @media (max-width: 800px) {
   .logo-container {
@@ -180,10 +179,11 @@ a.nostyle:visited {
   flex-direction: column;
   justify-content: space-evenly;
   align-items: center;
-  height: 300px;
+  min-height: 300px;
+  padding: 0 10px 0;
   background-color: rgb(232, 218, 204);
-
-
+  
+  
   box-shadow: 8px 8px 8px rgba(0, 0, 0, 0.3);
   border-radius: 20px;
   transition: 1000ms;
@@ -208,7 +208,7 @@ a.nostyle:visited {
 .project-card input {
   height: 50px;
   width: 115px;
-  background-color: rgb(255, 255, 255);
+  background-color: rgb(232, 218, 204);
   border-radius: 20px;
   font-family: "Source Serif 4", sans-serif;
   font-weight: 700;
@@ -217,6 +217,10 @@ a.nostyle:visited {
 }
 
 /*SKILLS*/
+#skills-color {
+  background-color: rgb(255, 255, 255);
+}
+
 .skills-container {
   display: flex;
   justify-content: space-evenly;
@@ -229,8 +233,6 @@ a.nostyle:visited {
   align-items: center;
   height: 140px;
   width: 140px;
-  border-radius: 10px;
-  background-color: rgb(255, 255, 255, 0.8);
 }
 
 @media (max-width: 800px) {
@@ -407,32 +409,7 @@ a.nostyle:visited {
 
 .public-header p {
   font-size: 1rem;
-}
-
-.circle {
-  height: 20px;
-  width: 20px;
-  border-radius: 50%;
-  border: 1px solid rgb(0, 0, 0, 0.7);
-  margin: 0 5px 0;
-}
-.color-red {
-  background-color: rgb(237, 76, 92);
-}
-.color-yellow {
-  background-color: rgb(253, 203, 88);
-}
-.color-green {
-  background-color: rgb(120, 177, 89);
-}
-@media (max-width: 600px) {
-  .public-header p {
-    font-size: 0.6rem;
-  }
-  .circle {
-    height: 12.5px;
-    width: 12.5px;
-  }
+  margin: auto;
 }
 
 .public-container ul {
@@ -442,17 +419,17 @@ a.nostyle:visited {
   border: 1px solid black;
   border-radius: 10px;
   background-color: white;
+  font-size: 1rem;
 }
 
 .public-container li {
-  margin-top: 15px;
-  margin-left: 10px;
+  margin: 10px 0;
   list-style: none;
   font-size: 0.7rem;
 }
 
-.public-p {
-  font-size: 0.65rem;
+.publix-text {
+  border: 1px solid red
 }
 
 /*FOOTER*/
