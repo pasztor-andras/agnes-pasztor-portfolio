@@ -1,7 +1,6 @@
 import React from "react";
 
 export const Publications = () => {
-  const publicUrl = "https://scholar.google.com/citations?user=4vZlm9kAAAAJ&hl=en";
   const publicOneUrl =
     "https://scholar.google.com/citations?view_op=view_citation&hl=en&user=4vZlm9kAAAAJ&citation_for_view=4vZlm9kAAAAJ:u-x6o8ySG0sC";
   const publicTwoUrl =

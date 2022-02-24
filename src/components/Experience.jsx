@@ -20,7 +20,7 @@ export const Experience = () => {
           <div className="content">
             <h2>Nov 2013 - Aug 2016</h2>
             <p>
-            Software Test Engineer/Customer Support Manager
+            Software Test Engineer / Customer Support Manager
             </p>
           </div>
         </motion.div>
@@ -28,7 +28,7 @@ export const Experience = () => {
           <div className="content">
             <h2>Mar 2012 - Dec 2012</h2>
             <p>
-            Software Test Engineer/Scrummaster
+            Software Test Engineer / Scrummaster
             </p>
           </div>
         </motion.div>
@@ -36,7 +36,7 @@ export const Experience = () => {
           <div className="content">
             <h2>Sep 2008 - Aug 2010</h2>
             <p>
-            Software tester/Technical writer
+            Software tester / Technical writer
             </p>
           </div>
         </motion.div>

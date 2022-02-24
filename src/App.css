@@ -148,12 +148,14 @@ a.nostyle:visited {
 @media (max-width: 800px) {
   .about-text-container {
     width: 80%;
-    transition: 1000ms;
+    margin: 15px 0 15px 0;
+    padding: 10px 15px;
     font-size: 0.6rem;
-    margin: 20px 0 20px 0;
+    transition: 1000ms;
   }
   .about-text-header {
     height: 100%;
+    margin-bottom: 5px;
     font-size: 1rem;
     font-weight: 700;
     transition: 1000ms;
@@ -179,7 +181,7 @@ a.nostyle:visited {
   flex-direction: column;
   justify-content: space-evenly;
   align-items: center;
-  min-height: 300px;
+  min-height: 350px;
   padding: 0 10px 0;
   background-color: rgb(232, 218, 204);
   
@@ -190,9 +192,11 @@ a.nostyle:visited {
 }
 @media (max-width: 800px) {
   .project-card {
+    max-height: 300px;
+    max-width: 90%;
     flex-direction: column;
-    height: 150px;
     padding: 0 5px 10px;
+    margin: 5px 0 10px 0;
   }
 }
 
@@ -201,13 +205,14 @@ a.nostyle:visited {
 }
 @media (max-width: 800px) {
   .projects-logo {
-    max-height: 100px;
+    max-width: 100%;
+    padding: 0;
   }
 }
 
 .project-card input {
-  height: 50px;
-  width: 115px;
+  min-height: 50px;
+  min-width: 115px;
   background-color: rgb(232, 218, 204);
   border-radius: 20px;
   font-family: "Source Serif 4", sans-serif;
@@ -353,10 +358,16 @@ a.nostyle:visited {
     left: 31px;
   }
 
+  .exp-timeline {
+    position: relative;
+    width: 100%;
+    margin: 0 auto;
+  }
+
   .exp-card {
     width: 100%;
     padding-left: 70px;
-    padding-right: 25px;
+    padding-right: 10px;
   }
 
   .exp-card::before {
@@ -398,7 +409,7 @@ a.nostyle:visited {
 .public-header {
   display: flex;
   align-items: center;
-  height: 50px;
+  min-height: 50px;
   width: 100%;
   padding: 0px 5px 0px;
   border: 1px solid rgb(0, 0, 0);
