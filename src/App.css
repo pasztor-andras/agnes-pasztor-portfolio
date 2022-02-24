@@ -69,7 +69,7 @@ a.nostyle:visited {
 
 .section-title {
   font-family: "Source Serif 4", sans-serif;
-  font-size: 2rem;
+  font-size: 1.6rem;
   font-weight: 700;
  text-align: center;
 }
@@ -346,6 +346,7 @@ a.nostyle:visited {
 }
 
 .content {
+  /* min-width: max-content; */
   padding: 20px 30px;
   background-color: rgb(255, 255, 255);
   position: relative;
@@ -400,10 +401,15 @@ a.nostyle:visited {
 
 .public-container {
   min-height: 200px;
-  min-width: 40%;
+  max-width: 80%;
   margin: 10px;
   border: 1px solid rgb(0, 0, 0);
   background-color: rgb(140, 128, 128, 1);
+}
+@media (max-width: 600px) {
+  .public-container {
+    max-width: 80%;
+  }
 }
 
 .public-header {
@@ -441,6 +447,9 @@ a.nostyle:visited {
 
 .publix-text {
   border: 1px solid red
+}
+ a{
+  text-decoration: none;
 }
 
 /*FOOTER*/
