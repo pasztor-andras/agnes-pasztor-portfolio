@@ -1,46 +1,45 @@
 import React from "react";
+import { motion } from "framer-motion";
 
 export const Experience = () => {
+  
+
   return (
     <div className="exp-container">
-      <span>Experience timeline</span>
+      <span className="section-title">Experience timeline</span>
       <div className="exp-timeline">
-        <div className="exp-card left">
-          <div className="content">
-            <h2>2017</h2>
+        <motion.div className="exp-card left" initial={{ y: -200, opacity: 0 }}  whileInView= {{ y: 0, opacity: 1 }} transition= {{ duration: 1}} viewport={{once: true}}>
+          <motion.div className="content">
+            <h2>Jun 2017 - Present</h2>
             <p>
-              Lorem ipsum dolor sit amet consectetur adipisicing elit. Consectetur fugiat unde, odit nesciunt expedita amet reprehenderit facere ipsam
-              impedit ea voluptas, incidunt aspernatur, aliquid voluptatum sunt! Harum nemo deserunt quidem.
+            Senior Software Engineer in Test
+            </p>
+          </motion.div>
+        </motion.div>
+        <motion.div className="exp-card right" initial={{ y: -200, opacity: 0 }}  whileInView= {{ y: 0, opacity: 1 }} transition= {{ duration: 1}} viewport={{once: true}}>
+          <div className="content">
+            <h2>Nov 2013 - Aug 2016</h2>
+            <p>
+            Software Test Engineer / Customer Support Manager
             </p>
           </div>
-        </div>
-        <div className="exp-card right">
+        </motion.div>
+        <motion.div className="exp-card left" initial={{ y: -200, opacity: 0 }}  whileInView= {{ y: 0, opacity: 1 }} transition= {{ duration: 1}} viewport={{once: true}}>
           <div className="content">
-            <h2>2016</h2>
+            <h2>Mar 2012 - Dec 2012</h2>
             <p>
-              Lorem ipsum dolor sit amet consectetur adipisicing elit. Consectetur fugiat unde, odit nesciunt expedita amet reprehenderit facere ipsam
-              impedit ea voluptas, incidunt aspernatur, aliquid voluptatum sunt! Harum nemo deserunt quidem.
+            Software Test Engineer / Scrummaster
             </p>
           </div>
-        </div>
-        <div className="exp-card left">
+        </motion.div>
+        <motion.div className="exp-card right" initial={{ y: -200, opacity: 0 }}  whileInView= {{ y: 0, opacity: 1 }} transition= {{ duration: 1}} viewport={{once: true}}>
           <div className="content">
-            <h2>2017</h2>
+            <h2>Sep 2008 - Aug 2010</h2>
             <p>
-              Lorem ipsum dolor sit amet consectetur adipisicing elit. Consectetur fugiat unde, odit nesciunt expedita amet reprehenderit facere ipsam
-              impedit ea voluptas, incidunt aspernatur, aliquid voluptatum sunt! Harum nemo deserunt quidem.
+            Software tester / Technical writer
             </p>
           </div>
-        </div>
-        <div className="exp-card right">
-          <div className="content">
-            <h2>2016</h2>
-            <p>
-              Lorem ipsum dolor sit amet consectetur adipisicing elit. Consectetur fugiat unde, odit nesciunt expedita amet reprehenderit facere ipsam
-              impedit ea voluptas, incidunt aspernatur, aliquid voluptatum sunt! Harum nemo deserunt quidem.
-            </p>
-          </div>
-        </div>
+        </motion.div>
       </div>
     </div>
   );

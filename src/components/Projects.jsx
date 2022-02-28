@@ -1,29 +1,32 @@
 import React from "react";
+import amboss from "../images/amboss-logo.png";
+import omixon from "../images/omixon-logo.png";
 
 export const Projects = () => {
+  const projectOneUrl = "https://www.amboss.com/us";
+  const projectTwoUrl = "https://www.omixon.com/products/hla-twin";
+
+  function GoToProjectOne() {
+    window.open(projectOneUrl);
+  }
+  function GoToProjectTwo() {
+    window.open(projectTwoUrl);
+  }
+
   return (
     <div className="mid-section project-container">
       <div className="project-card">
-        <div className="project-card-inner">
-          <div className="project-card-front">
-            <h1>Project1</h1>
-          </div>
-          <div className="project-card-back">
-            <h1>Amboss</h1>
-            <p>https://www.ambos.com/us</p>
-          </div>
-        </div>
+        <img className="projects-logo" src={amboss} alt="amboss" />
+        <form action={projectOneUrl}>
+          <input type="button" onClick={GoToProjectOne} value="Read more" />
+        </form>
       </div>
+      <p className="section-title">Projects</p>
       <div className="project-card">
-        <div className="project-card-inner">
-          <div className="project-card-front">
-            <h1>Project2</h1>
-          </div>
-          <div className="project-card-back">
-            <h1>Omixon</h1>
-            <p>https://www.omixon.com/products/hla-twin</p>
-          </div>
-        </div>
+        <img className="projects-logo" src={omixon} alt="omixon" />
+        <form action={projectTwoUrl}>
+          <input type="button" onClick={GoToProjectTwo} value="Read more" />
+        </form>
       </div>
     </div>
   );

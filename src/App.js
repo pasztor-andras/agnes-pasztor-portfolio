@@ -9,7 +9,6 @@ import { Publications } from './components/Publications';
 
 
 
-
 function App() {
 
   const gitUrl = "https://github.com/agnesapasztor"

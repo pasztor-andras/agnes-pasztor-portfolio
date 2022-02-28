@@ -1,47 +1,29 @@
 import React from "react";
-import dataeng2 from "../icons/dataeng2.png";
-import dataeng3 from "../icons/dataeng3.png";
-import python from "../icons/002-python.png";
-import sql from "../icons/001-sql.png";
-import js from "../icons/001-javascript.png";
-import cypress from "../icons/cypress-black.png";
-import selenium from "../icons/003-selenium.png";
-import java from "../icons/005-javascript.png";
-import bash from "../icons/bash.png";
+import { motion } from "framer-motion";
 
 export const Skills = () => {
+  const iconNames = ["dataeng", "python", "sql", "js", "cypress", "selenium", "java", "bash", "linux"];
+
   return (
-    <div className="mid-section">
+    <div id="skills-color" className="mid-section">
+      <p className="section-title">Skills & experiences</p>
       <div className="skills-container">
-        <div className="skills-background">
-          <img className="icons" src={dataeng2} alt="data engineering" />
-        </div>
-        <div className="skills-background">
-          <img className="icons" src={dataeng3} alt="data engineering" />
-        </div>
-        <div className="skills-background">
-          <img className="icons" src={python} alt="python" />
-        </div>
-        <div className="skills-background">
-          <img className="icons" src={sql} alt="sql" />
-        </div>
+        {iconNames.slice(0, 4).map((icon, index) => {
+          return (
+            <motion.div className="skills-background" key={index} initial={{ scale: 1 }} whileHover={{ scale: 1.2 }}>
+              <img className="icons" key={index} alt={icon} src={require(`../icons/${icon}.png`)} animate={{}}></img>
+            </motion.div>
+          );
+        })}
       </div>
       <div className="skills-container">
-        <div className="skills-background">
-          <img className="icons" src={js} alt="" />
-        </div>
-        <div className="skills-background">
-          <img className="icons" src={cypress} alt="" />
-        </div>
-        <div className="skills-background">
-          <img className="icons" src={selenium} alt="" />
-        </div>
-        <div className="skills-background">
-          <img className="icons" src={java} alt="" />
-        </div>
-        <div className="skills-background">
-          <img className="icons" src={bash} alt="" />
-        </div>
+        {iconNames.slice(4, 9).map((icon, index) => {
+          return (
+            <motion.div className="skills-background" key={index} initial={{ scale: 1 }} whileHover={{ scale: 1.2 }}>
+              <img className="icons" key={index} alt={icon} src={require(`../icons/${icon}.png`)}></img>
+            </motion.div>
+          );
+        })}
       </div>
     </div>
   );
