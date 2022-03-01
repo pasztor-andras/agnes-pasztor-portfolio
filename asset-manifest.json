@@ -1,0 +1,14 @@
+{
+  "files": {
+    "main.css": "/agnes-pasztor-portfolio/static/css/main.a039b69d.css",
+    "main.js": "/agnes-pasztor-portfolio/static/js/main.0603c7f4.js",
+    "static/media/Logo.png": "/agnes-pasztor-portfolio/static/media/Logo.5634dec87b8aa5978820.png",
+    "index.html": "/agnes-pasztor-portfolio/index.html",
+    "main.a039b69d.css.map": "/agnes-pasztor-portfolio/static/css/main.a039b69d.css.map",
+    "main.0603c7f4.js.map": "/agnes-pasztor-portfolio/static/js/main.0603c7f4.js.map"
+  },
+  "entrypoints": [
+    "static/css/main.a039b69d.css",
+    "static/js/main.0603c7f4.js"
+  ]
+}
